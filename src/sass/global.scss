@@ -1,0 +1,27 @@
+@use 'sass/color';
+
+@import url('//fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import 'color.scss';
+@import 'fonts.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}

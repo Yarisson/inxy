@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+       url('../../public/fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"), local("Roboto-Bold"),
+       url('../../public/fonts/Roboto-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PlayfairDisplay"), local("PlayfairDisplay-Regular"),
+       url('../../public/fonts/PlayfairDisplay-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"), local("PlayfairDisplay-Bold"),
+       url('../../public/fonts/PlayfairDisplay-Bold.ttf') format("truetype");
+}
