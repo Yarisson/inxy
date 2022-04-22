@@ -5,7 +5,7 @@
         class="nav__link"
         :class="{ active: newsIsActive }"
         href=""
-        @click="clearSearch"
+        @update:articles="allArticles"
         >News</a
       >
       <a class="nav__link" href="">Portal</a>
@@ -16,7 +16,8 @@
         v-show="isActiveSearch"
         class="header__search-clear"
         @click="clearSearch">
-        <svg class="header__clear-icon"
+        <svg
+          class="header__clear-icon"
           version="1.1"
           id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,6 @@
         class="header__input"
         v-show="isActiveSearch"
         v-model="searchArticle"
-        @keyup.enter="search"
         type="text" />
 
       <button
@@ -83,24 +83,41 @@
 <script>
 export default {
   name: 'Header',
+  props: ['articles'],
+  emits: ['update:articles'],
   data: () => ({
     newsIsActive: true,
     isActiveSearch: false,
     searchArticle: '',
   }),
+    created() {
+    this.allArticles = this.articles;
+  },
   methods: {
     startSearch() {
       return (this.isActiveSearch = true);
     },
-    search() {
-      this.isActiveSearch = !this.isActiveSearch;
-      this.$emit('searchArticles', this.searchArticle);
-      this.searchArticle = '';
-    },
     clearSearch() {
       this.isActiveSearch = !this.isActiveSearch;
-      this.$emit('searchArticles', '');
+      this.searchArticle = '';
     },
+  },
+  watch: {
+    searchArticle(newValue) {
+      let filteringArticles = [];
+      if (newValue) {
+        filteringArticles = this.articles.filter((el) => {
+          return el.title
+            .toLowerCase()
+            .includes(this.searchArticle.toLowerCase());
+        });
+      } else {
+        filteringArticles = this.allArticles;
+      }
+      this.$emit('update:articles', filteringArticles);
+    },
+    deep: true,
+    immediate: true,
   },
 };
 </script>

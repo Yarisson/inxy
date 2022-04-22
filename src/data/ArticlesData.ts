@@ -1,0 +1,58 @@
+export const ArticlesData = [
+  {
+    img: 'image1',
+    text: 'Massa tortor nibh nulla condimentum imperdiet scelerisque... Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra. Velit, dui, egestas nisi, elementum mattis mauris, magnis.',
+    title: 'Some news',
+    date: '12.12.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image2',
+    text: 'Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra. Velit, dui, egestas nisi, elementum mattis mauris, magnis. Massa tortor nibh nulla condimentum imperdiet scelerisque... ',
+    title: 'News of the world',
+    date: '12.11.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image3',
+    text: 'Velit, dui, egestas nisi, elementum mattis mauris, magnis. Massa tortor nibh nulla condimentum imperdiet scelerisque... Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra.',
+    title: 'Origal news',
+    date: '12.11.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image4',
+    text: 'Massa tortor nibh nulla condimentum imperdiet scelerisque... Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra. Velit, dui, egestas nisi, elementum mattis mauris, magnis.',
+    title: 'Some some text about nothing',
+    date: '12.03.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image5',
+    text: 'Massa tortor nibh nulla condimentum imperdiet scelerisque... Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra. Velit, dui, egestas nisi, elementum mattis mauris, magnis.',
+    title: 'News Title Lorem Ipsum Dolor Sit Amet',
+    date: '12.26.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image6',
+    text: 'Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra. Velit, dui, egestas nisi, elementum mattis mauris, magnis. Massa tortor nibh nulla condimentum imperdiet scelerisque... ',
+    title: 'News Title Lorem Ipsum Dolor Sit Amet',
+    date: '11.11.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image7',
+    text: 'Velit, dui, egestas nisi, elementum mattis mauris, magnis. Massa tortor nibh nulla condimentum imperdiet scelerisque... Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra.',
+    title: 'News Title Lorem Ipsum Dolor Sit Amet',
+    date: '12.15.2021',
+    source: 'CNN Indonesia',
+  },
+  {
+    img: 'image8',
+    text: 'Velit, dui, egestas nisi, elementum mattis mauris, magnis. Massa tortor nibh nulla condimentum imperdiet scelerisque... Nisi, sagittis aliquet sit rutrum. Nunc, id vestibulum quam ornare adipiscing. Pellentesque sed turpis nunc gravida pharetra, sit nec vivamus pharetra.',
+    title: 'News Title Lorem Ipsum Dolor Sit Amet',
+    date: '12.06.2021',
+    source: 'CNN Indonesia',
+  },
+];
