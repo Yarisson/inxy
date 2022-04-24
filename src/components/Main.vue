@@ -46,13 +46,15 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue';
 import Article from './Article.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
 import { ArticlesData } from '../data/ArticlesData';
+import IArticle from '../ts/IArticle';
 
-export default {
+export default defineComponent({
   name: 'Main',
   components: {
     Article,
@@ -61,7 +63,7 @@ export default {
   },
   data: () => ({
     isBack: false,
-    articles: [],
+    articles: [] as IArticle[],
   }),
   created() {
     this.articles = ArticlesData;
@@ -80,7 +82,7 @@ export default {
       }
     },
   },
-};
+});
 </script>
 
 <style lang="scss">
